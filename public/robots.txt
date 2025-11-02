@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Яндекс.Бот
+User-agent: Yandex
+Allow: /
+
+# Карта сайта
+Sitemap: https://your-site.netlify.app/sitemap.xml
+
