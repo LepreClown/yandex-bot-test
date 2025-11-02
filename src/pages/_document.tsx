@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import {Head, Html, Main, NextScript} from "next/document";
 
 const getBaseUrl = (): string => {
 	if (process.env.NEXT_PUBLIC_BASE_URL) {
@@ -22,6 +22,7 @@ export default function Document() {
 				<meta name="robots" content="index, follow" />
 				<meta name="yandex-verification" content="" />
 				<link rel="canonical" href={baseUrl} />
+				<meta name="yandex-verification" content="c40c272ea7a1f7d6" />
 			</Head>
 			<body className="antialiased">
 				<Main />

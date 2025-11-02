@@ -6,5 +6,5 @@ User-agent: Yandex
 Allow: /
 
 # Карта сайта
-Sitemap: https://your-site.netlify.app/sitemap.xml
+Sitemap: https://testing-yandex-robots.netlify.app/sitemap.xml
 
