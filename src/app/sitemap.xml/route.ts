@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { NextResponse } from 'next/server';
 
 interface ISitemapUrl {
 	loc: string;
@@ -14,7 +14,7 @@ const getBaseUrl = (): string => {
 	if (process.env.VERCEL_URL) {
 		return `https://${process.env.VERCEL_URL}`;
 	}
-	if (process.env.NETLIFY) {
+	if (process.env.NETLIFY && process.env.URL) {
 		return `https://${process.env.URL}`;
 	}
 	return 'https://your-site.netlify.app';
@@ -39,11 +39,7 @@ ${urlEntries}
 </urlset>`;
 };
 
-const Sitemap = () => {
-	return null;
-};
-
-export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+export async function GET() {
 	const baseUrl = getBaseUrl();
 
 	const staticPages = [
@@ -83,18 +79,14 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
 	});
 
 	const allUrls = [...staticPages, ...dynamicPages];
-
 	const sitemap = generateSitemap(allUrls);
 
-	res.setHeader('Content-Type', 'text/xml');
-	res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate');
-	res.write(sitemap);
-	res.end();
-
-	return {
-		props: {},
-	};
-};
-
-export default Sitemap;
+	return new NextResponse(sitemap, {
+		status: 200,
+		headers: {
+			'Content-Type': 'text/xml',
+			'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+		},
+	});
+}
 
