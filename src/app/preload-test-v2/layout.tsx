@@ -12,6 +12,7 @@ export default function PreloadTestLayout({
 	return (
 		<>
 			<link
+				key="preload-test-v2-mobile-image-preload"
 				rel="preload"
 				as="image"
 				href={mobileImageSrc}

@@ -12,6 +12,7 @@ export default function ArticlesLayout({
 	return (
 		<>
 			<link
+				key="articles-v2-mobile-image-preload"
 				rel="preload"
 				as="image"
 				href={mobileImageSrc}

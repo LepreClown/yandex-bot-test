@@ -12,6 +12,7 @@ export default function NewsLayout({
 	return (
 		<>
 			<link
+				key="news-v2-mobile-image-preload"
 				rel="preload"
 				as="image"
 				href={mobileImageSrc}
