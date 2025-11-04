@@ -19,11 +19,11 @@ const generateSitemap = (): string => {
 
 	const staticPages = [
 		{ loc: '/', priority: '1.0', changefreq: 'daily' },
-		{ loc: '/prognozy-v2', priority: '0.9', changefreq: 'weekly' },
-		{ loc: '/prognozy2-v2', priority: '0.8', changefreq: 'weekly' },
-		{ loc: '/preload-test-v2', priority: '0.8', changefreq: 'weekly' },
-		{ loc: '/articles-v2', priority: '0.8', changefreq: 'weekly' },
-		{ loc: '/news-v2', priority: '0.8', changefreq: 'weekly' },
+		{ loc: '/prognozy-v3-pages', priority: '0.9', changefreq: 'weekly' },
+		{ loc: '/prognozy2-v3-pages', priority: '0.8', changefreq: 'weekly' },
+		{ loc: '/preload-test-v3-pages', priority: '0.8', changefreq: 'weekly' },
+		{ loc: '/articles-v3-pages', priority: '0.8', changefreq: 'weekly' },
+		{ loc: '/news-v3-pages', priority: '0.8', changefreq: 'weekly' },
 	];
 
 	const prognozySlugs = [
@@ -48,17 +48,17 @@ const generateSitemap = (): string => {
 
 	const dynamicPages = [
 		...prognozySlugs.map((slug) => ({
-			loc: `/prognozy-v2/${slug}`,
+			loc: `/prognozy-v3-pages/${slug}`,
 			priority: '0.7',
 			changefreq: 'weekly' as const,
 		})),
 		...prognozy2Slugs.map((slug) => ({
-			loc: `/prognozy2-v2/${slug}`,
+			loc: `/prognozy2-v3-pages/${slug}`,
 			priority: '0.6',
 			changefreq: 'weekly' as const,
 		})),
 		...preloadTestSlugs.map((slug) => ({
-			loc: `/preload-test-v2/${slug}`,
+			loc: `/preload-test-v3-pages/${slug}`,
 			priority: '0.6',
 			changefreq: 'weekly' as const,
 		})),

@@ -31,28 +31,28 @@ export default function Home() {
 						</h2>
 						<div className="flex flex-col gap-3 mb-4">
 							<Link
-								href="/prognozy-v2"
+								href="/prognozy-v3-pages"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/prognozy-v2
+								/prognozy-v3-pages
 							</Link>
 							<Link
-								href="/prognozy2-v2"
+								href="/prognozy2-v3-pages"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/prognozy2-v2
+								/prognozy2-v3-pages
 							</Link>
 							<Link
-								href="/prognozy-v2/test-slug-1"
+								href="/prognozy-v3-pages/test-slug-1"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/prognozy-v2/[slug]
+								/prognozy-v3-pages/[slug]
 							</Link>
 							<Link
-								href="/prognozy2-v2/test-slug-1"
+								href="/prognozy2-v3-pages/test-slug-1"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/prognozy2-v2/[slug]
+								/prognozy2-v3-pages/[slug]
 							</Link>
 						</div>
 						<h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
@@ -60,28 +60,28 @@ export default function Home() {
 						</h2>
 						<div className="flex flex-col gap-3">
 							<Link
-								href="/preload-test-v2"
+								href="/preload-test-v3-pages"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/preload-test-v2
+								/preload-test-v3-pages
 							</Link>
 							<Link
-								href="/articles-v2"
+								href="/articles-v3-pages"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/articles-v2
+								/articles-v3-pages
 							</Link>
 							<Link
-								href="/news-v2"
+								href="/news-v3-pages"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/news-v2
+								/news-v3-pages
 							</Link>
 							<Link
-								href="/preload-test-v2/test-slug-1"
+								href="/preload-test-v3-pages/test-slug-1"
 								className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 							>
-								/preload-test-v2/[slug]
+								/preload-test-v3-pages/[slug]
 							</Link>
 						</div>
 					</div>
