@@ -25,13 +25,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 1.0,
 		},
 		{
-			url: `${baseUrl}/prognozy`,
+			url: `${baseUrl}/prognozy-v2`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',
 			priority: 0.9,
 		},
 		{
-			url: `${baseUrl}/prognozy2`,
+			url: `${baseUrl}/prognozy2-v2`,
+			lastModified: currentDate,
+			changeFrequency: 'weekly',
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/preload-test-v2`,
+			lastModified: currentDate,
+			changeFrequency: 'weekly',
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/articles-v2`,
+			lastModified: currentDate,
+			changeFrequency: 'weekly',
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/news-v2`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',
 			priority: 0.8,
@@ -41,13 +59,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	const exampleSlugs = ['test-slug-1', 'test-slug-2'];
 	const dynamicPages: MetadataRoute.Sitemap = exampleSlugs.flatMap((slug) => [
 		{
-			url: `${baseUrl}/prognozy/${slug}`,
+			url: `${baseUrl}/prognozy-v2/${slug}`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',
 			priority: 0.7,
 		},
 		{
-			url: `${baseUrl}/prognozy2/${slug}`,
+			url: `${baseUrl}/prognozy2-v2/${slug}`,
+			lastModified: currentDate,
+			changeFrequency: 'weekly',
+			priority: 0.6,
+		},
+		{
+			url: `${baseUrl}/preload-test-v2/${slug}`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',
 			priority: 0.6,

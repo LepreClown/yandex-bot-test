@@ -14,10 +14,10 @@ export default function Home() {
 				/>
 				<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
 					<h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-						Test Yandex Bot - Navigation
+						Тестовая площадка для Яндекс.Индекса
 					</h1>
 					<p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-						Страницы для тестирования индексации Яндекс.Ботом
+						Обновленная версия сайта для проверки работы поискового робота
 					</p>
 				</div>
 				<div className="flex flex-col gap-4 w-full">
@@ -26,28 +26,28 @@ export default function Home() {
 					</h2>
 					<div className="flex flex-col gap-3 mb-4">
 						<Link
-							href="/prognozy"
+							href="/prognozy-v2"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/prognozy
+							/prognozy-v2
 						</Link>
 						<Link
-							href="/prognozy2"
+							href="/prognozy2-v2"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/prognozy2
+							/prognozy2-v2
 						</Link>
 						<Link
-							href="/prognozy/test-slug-1"
+							href="/prognozy-v2/test-slug-1"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/prognozy/[slug]
+							/prognozy-v2/[slug]
 						</Link>
 						<Link
-							href="/prognozy2/test-slug-1"
+							href="/prognozy2-v2/test-slug-1"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/prognozy2/[slug]
+							/prognozy2-v2/[slug]
 						</Link>
 					</div>
 					<h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
@@ -55,28 +55,28 @@ export default function Home() {
 					</h2>
 					<div className="flex flex-col gap-3">
 						<Link
-							href="/preload-test"
+							href="/preload-test-v2"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/preload-test
+							/preload-test-v2
 						</Link>
 						<Link
-							href="/articles"
+							href="/articles-v2"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/articles
+							/articles-v2
 						</Link>
 						<Link
-							href="/news"
+							href="/news-v2"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/news
+							/news-v2
 						</Link>
 						<Link
-							href="/preload-test/test-slug-1"
+							href="/preload-test-v2/test-slug-1"
 							className="flex h-12 items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
 						>
-							/preload-test/[slug]
+							/preload-test-v2/[slug]
 						</Link>
 					</div>
 				</div>
