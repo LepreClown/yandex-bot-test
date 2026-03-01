@@ -14,6 +14,7 @@ const imageSizesAll = [...imageSizes, ...imageSizes.map((w) => w * 2)]
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+	cacheComponents: true,
   images: {
     deviceSizes: [1040],
     imageSizes: imageSizesAll,
