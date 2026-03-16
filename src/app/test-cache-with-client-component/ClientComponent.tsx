@@ -8,7 +8,7 @@ export const ClientComponent = ({title}: {title: string}) => {
 	useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        const res = await fetch('https://jsonplaceholder.typicode.com/todos/2')
         const json = await res.json()
         setData(json)
       } catch (error) {
